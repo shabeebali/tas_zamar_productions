@@ -68,7 +68,7 @@ class DonateController extends Controller
                 $data = $donation->toArray();
                 $data['created_at'] = $donation->created_at->format('d/m/Y');
                 Mail::to($donation->email)->bcc([
-                    'info@zamarmusicacademy.ca',
+                    'info@zamarmusic.org',
                     'info@tastechnologies.com',
                 ])
                 ->send(new DonateMail($data));
@@ -102,7 +102,7 @@ class DonateController extends Controller
             $data = $donation->toArray();
             $data['created_at'] = $donation->created_at->format('d/m/Y');
             Mail::to($donation->email)->bcc([
-                'info@zamarmusicacademy.ca',
+                'info@zamarmusic.org',
                 'info@tastechnologies.com',
             ])
                 ->send(new DonateMail($data));

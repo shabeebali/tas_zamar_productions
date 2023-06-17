@@ -18,7 +18,7 @@ class EnquiryController extends Controller
         $sortBy = $request->input('sort');
         $descending = $request->input('descending','0') == 1;
         $rowsPerPage = (int)$request->input('rpp',20);
-        $enquiries = Enquiry::select(['id','name','email','phone','comment','created_at']);
+        $enquiries = Enquiry::select(['id','first_name','last_name','email','phone','comment','created_at']);
         if($sortBy && $sortBy !== 'null') {
             $enquiries->orderBy($sortBy,$descending ? 'DESC' : 'ASC');
         }

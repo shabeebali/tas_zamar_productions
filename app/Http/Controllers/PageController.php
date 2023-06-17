@@ -48,4 +48,18 @@ class PageController extends Controller
             abort(404);
         }
     }
+    public function thankyou(Request $request, $urlKey = NULL)
+    {
+        $pageModel = Page::where('url_key','thankyou')->first();
+        if($pageModel) {
+            return view('frontend.donate',[
+                'content' => $pageModel->content,
+                'meta_title'=>$pageModel->meta_title,
+                'meta_keywords' => $pageModel->meta_keywords,
+                'meta_description' => $pageModel->meta_description
+            ])->withShortcodes();
+        } else {
+            abort(404);
+        }
+    }
 }

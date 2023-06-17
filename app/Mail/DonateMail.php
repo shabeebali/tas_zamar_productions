@@ -24,8 +24,8 @@ class DonateMail extends Mailable
 
     public function build(): DonateMail
     {
-        return $this->from('info@zamarmusicacademy.ca','Zamar Music Academy')
-            ->subject('Zamar Music Academy')
+        return $this->from('info@zamarmusic.org','Zamar Music Productions')
+            ->subject('Zamar Music Productions')
             ->view('mail.donate')
             ->with(['data' => $this->data]);
     }

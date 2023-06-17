@@ -9,9 +9,16 @@ import {onMounted, PropType, ref} from "vue";
 
 const columns: QTableProps['columns'] = [
     {
-        field: 'name',
-        label: 'Name',
-        name: 'name',
+        field: 'first_name',
+        label: 'First Name',
+        name: 'first_name',
+        align: 'left',
+        sortable: true,
+    },
+    {
+        field: 'last_name',
+        label: 'Last Name',
+        name: 'last_name',
         align: 'left',
         sortable: true,
     },

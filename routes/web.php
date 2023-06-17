@@ -22,6 +22,7 @@ Route::post('contact',[EnquiryController::class,'contact'])->name('contact');
 Route::get('donate/response',[DonateController::class,'response'])->name('donate.response');
 Route::post('donate',[DonateController::class,'donate'])->name('donate');
 Route::get('donate',[PageController::class,'donate']);
+Route::get('thankyou',[PageController::class,'thankyou']);
 Route::get('/{any}', [PageController::class,'page'])->where('any', '.*');
 
 

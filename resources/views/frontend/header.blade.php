@@ -161,6 +161,8 @@
 
     </style>
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 </head>
 <body
     class="home page-template page-template-page-templates page-template-fullwidth-content page-template-page-templatesfullwidth-content-php page page-id-22 layout-fullwidth blog-default elementor-default elementor-page elementor-page-22">

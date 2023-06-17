@@ -18,7 +18,7 @@ const props = defineProps({
             </div>
         </div>
         <div class="text-subtitle1 text-center text-grey-7">
-            Welcome to Zamar Music Academy Admin Dashboard
+            Welcome to Zamar Music Productions Admin Dashboard
         </div>
         <q-separator/>
         <div class="row q-mt-md q-col-gutter-lg">

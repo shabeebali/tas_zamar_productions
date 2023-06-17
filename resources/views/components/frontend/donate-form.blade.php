@@ -70,9 +70,9 @@
                 name="designation"
                 aria-label="Fund. A fund is created by a charity to raise awareness and support for a specific programme or campaign. You can designate your donation to a fund that you support."
                 id="designation">
-                <option value="">General Donation</option>
-                <option value="">Operating Budget</option>
-                <option value="">Charitable Programs</option>
+                <option value="General Donation">General Donation</option>
+                <option value="Operating Budget">Operating Budget</option>
+                <option value="Charitable Programs">Charitable Programs</option>
             </select>
         </div>
         <p class="clear"></p>

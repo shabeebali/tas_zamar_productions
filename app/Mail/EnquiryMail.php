@@ -24,8 +24,8 @@ class EnquiryMail extends Mailable
 
     public function build(): EnquiryMail
     {
-        return $this->from('info@zamarmusic.org','Zamar Music Academy')
-            ->subject('Zamar Music Academy')
+        return $this->from('info@zamarmusic.org','Zamar Music Productions')
+            ->subject('Zamar Music Productions')
             ->view('mail.enquiry')
             ->with(['data' => $this->data]);
     }
