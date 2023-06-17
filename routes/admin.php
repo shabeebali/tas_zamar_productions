@@ -20,6 +20,8 @@ Route::middleware(['auth:admin'])->group(function() {
     Route::post('users/change-password/{user}',[AdminUserController::class,'changePassword'])->name('users.change_password');
     Route::resource('users', AdminUserController::class);
     Route::get('donations',[DonationController::class,'index'])->name('donations.index');
+    Route::get('newsletter-registrations',[EnquiryController::class,'newsletterIndex'])->name('newsletter-registrations.index');
+    Route::delete('newsletter-registrations/{id}',[EnquiryController::class,'newsletterDestroy'])->name('newsletter-registrations.destroy');
     Route::get('donations/{id}',[DonationController::class,'show'])->name('donations.show');
     Route::delete('donations/{id}',[DonationController::class,'destroy'])->name('donations.destroy');
     Route::get('enquiries',[EnquiryController::class,'index'])->name('enquiries.index');

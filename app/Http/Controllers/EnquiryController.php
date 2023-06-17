@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Mail\EnquiryMail;
+use App\Mail\NewsletterMail;
 use App\Models\Enquiry;
+use App\Models\NewsLetterRegistration;
+use App\View\Components\Frontend\NewsletterForm;
 use Exception;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -42,6 +45,43 @@ class EnquiryController extends Controller
                         'info@tastechnologies.com',
                     ])
                     ->send(new EnquiryMail($model->toArray()));
+                Log::info('Email sent to:'.$model->email,$model->toArray());
+            } catch (Exception $e) {
+                Log::debug($e->getMessage());
+            }
+        } else {
+            Log::error('Google Recaptcha Failed for contact form',[
+                'request' => $request->toArray(),
+                'google_response' => $res->json()
+            ]);
+            return Redirect::back()->with(['error' => 'Recaptcha Failed']);
+        }
+        return Response::redirectTo('thankyou');
+    }
+
+    public function newsletter(Request $request): RedirectResponse
+    {
+        $request->validate([
+            'email' => 'required|email',
+            'g-recaptcha-response' => [
+                'required'
+            ],
+        ]);
+        $res = Http::asForm()->post('https://www.google.com/recaptcha/api/siteverify',[
+            'secret' => env('RECAPTCHA_SECRET_KEY'),
+            'response' => $request->input('g-recaptcha-response')
+        ]);
+        if($res->ok() && $res->json('success') === true) {
+            $model = new NewsLetterRegistration();
+            $model->fill($request->only(['email']));
+            $model->save();
+            try {
+                Mail::to($model->email)
+                    ->bcc([
+                        'info@zamarmusic.org',
+                        'info@tastechnologies.com',
+                    ])
+                    ->send(new NewsletterMail($model->toArray()));
                 Log::info('Email sent to:'.$model->email,$model->toArray());
             } catch (Exception $e) {
                 Log::debug($e->getMessage());

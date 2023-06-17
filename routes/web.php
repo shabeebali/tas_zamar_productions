@@ -20,6 +20,7 @@ use Inertia\Inertia;
 Route::get('donate/test/{id}',[DonateController::class,'testMail']);
 Route::post('contact',[EnquiryController::class,'contact'])->name('contact');
 Route::get('donate/response',[DonateController::class,'response'])->name('donate.response');
+Route::post('newsletter',[EnquiryController::class,'newsletter'])->name('newsletter');
 Route::post('donate',[DonateController::class,'donate'])->name('donate');
 Route::get('donate',[PageController::class,'donate']);
 Route::get('thankyou',[PageController::class,'thankyou']);
