@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link media="all" href="{{asset('wp-content/cache/autoptimize/css/autoptimize_d9012c86832922e3956a00737285bb54.css')}}" rel="stylesheet" />
     <title>Zamar Music Productions </title>
-    <link rel='dns-prefetch' href='http://fonts.googleapis.com/'/>
+    <link rel='dns-prefetch' href='https://fonts.googleapis.com/'/>
     <link rel='stylesheet' id='cx-google-fonts-kava-css'
-          href='http://fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C500%2C900%7CMontserrat%3A700&amp;subset=latin&amp;ver=5.3.2'
+          href='https://fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C500%2C900%7CMontserrat%3A700&amp;subset=latin&amp;ver=5.3.2'
           type='text/css' media='all'/>
     <link rel='stylesheet' href='css/style.css' type='text/css' media='all'/>
     <link rel='stylesheet' id='google-fonts-1-css'
