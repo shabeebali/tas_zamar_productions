@@ -5,7 +5,7 @@
         <div class="jet-subscribe-form__fields">
             <input class="jet-subscribe-form__input jet-subscribe-form__mail-field" type="email" name="email" placeholder="Your Email" autocomplete="off">
         </div>
-        <input type="submit" class="elementor-button elementor-size-md" value="Sign Up!"> </div>
+        <input type="submit" class="jet-subscribe-form__submit elementor-button elementor-size-md" value="Sign Up!"> </div>
     <div class="g-recaptcha" data-sitekey="{{env('RECAPTCHA_SITE_KEY')}}"></div>
     <div class="jet-subscribe-form__message">
         <div class="jet-subscribe-form__message-inner"><span></span></div>
