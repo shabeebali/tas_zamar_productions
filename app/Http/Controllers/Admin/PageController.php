@@ -105,7 +105,8 @@ class PageController extends Controller
           'meta_title' => $page->meta_title ?? '',
           'meta_keywords' => $page->meta_keywords ?? '',
           'meta_description' => $page->meta_description ?? ''
-        ]
+        ],
+        'tiny_mce_url' => asset('js/tinymce/tinymce.min.js')
       ]);
     }
 

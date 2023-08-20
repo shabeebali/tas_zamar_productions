@@ -24,6 +24,7 @@ onMounted(() => {
 
 const props =defineProps({
     pageTitle: String,
+    tiny_mce_url: String,
     model: Object as PropType<{
         id?: number;
         title: string;
@@ -79,7 +80,7 @@ function save() {
                         <div class="col-12">
                             <div class="text-subtitle2">Content</div>
                             <editor
-                                tinymce-script-src="/js/tinymce/tinymce.min.js"
+                                :tinymce-script-src="tiny_mce_url"
                                 :init="{
                                   selector: 'textarea#editor',
                                   plugins: ['link','table','code'],  // required by the code menu item,
