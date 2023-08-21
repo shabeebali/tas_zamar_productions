@@ -1,13 +1,15 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
-import {Head, router} from '@inertiajs/vue3';
+import {Head, router, usePage} from '@inertiajs/vue3';
 import AdminLayout from "@/Layouts/AdminLayout.vue";
 
 const props = defineProps({
     total_donations: Number,
     total_enquiries: Number,
-    data: Array
+    data: Array,
 })
+
+const page = usePage()
 </script>
 
 <template>
@@ -15,7 +17,7 @@ const props = defineProps({
     <AdminLayout>
         <div class="row">
             <div class="col-12 justify-center flex">
-                <q-img src="../../../assets/images/logo.png" width="100px"></q-img>
+                <q-img :src="page.props.logo_url" width="100px"></q-img>
             </div>
         </div>
         <div class="text-subtitle1 text-center text-grey-7">

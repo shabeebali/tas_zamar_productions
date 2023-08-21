@@ -18,7 +18,7 @@ class DashboardController extends Controller
         return Inertia::render('Admin/Dashboard',[
             'total_donations' =>  Donation::where('payment_status',DonationPaymentStatus::PAID)->sum('amount'),
             'total_enquiries' => Enquiry::count(),
-            'data' => $menu
+            'data' => $menu,
         ]);
     }
 }
