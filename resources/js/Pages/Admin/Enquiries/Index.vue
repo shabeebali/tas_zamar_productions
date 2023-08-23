@@ -140,7 +140,7 @@ function view(obj){
                         <tbody>
                             <q-tr>
                                 <q-td>Name</q-td>
-                                <q-td>{{enquiry.name}}</q-td>
+                                <q-td>{{enquiry.first_name}} {{enquiry.last_name}}</q-td>
                             </q-tr>
                             <q-tr>
                                 <q-td>Email</q-td>

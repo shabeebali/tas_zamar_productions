@@ -46,7 +46,7 @@
 .mailer-box select{
   color: #000;
 }
- 
+
 .mailer-box .mailer-bg-white{  padding:10px 20px; border-radius:15px; background:#fff;}
 
 .mailer-box .form-control2{ width:auto; display:inline; border:none; background:none; border-bottom:1px solid #000; border-radius:0}
@@ -67,7 +67,7 @@
 
 .elementor-image-box-wrapper{ background:#2275bb; text-align:center!important; padding:15px; border-radius:20px; width:100%;}
 .ser-icon-inner{ background:#e4ebf1; border-radius:20px; padding:30px 15px; transition: all .2s ease-in-out;}
- 
+
 .elementor-image-box-wrapper:hover .ser-icon-inner{ background:#fff; border-radius:0px;  }
 
 .donate-btn{ border:2px solid #fff; color:#fff; padding:10px 30px; display:block; text-align:center;}
@@ -188,7 +188,7 @@
      transition-delay: 1000ms;
 	 font-family: 'alex_brushregular', sans-serif; font-size:66px; color:#4a85b6;
  }
- 
+
  .main-slider-carousel .active .content-box h1 span{color:#fff;}
 
  .main-slider-carousel .content-box h2 {
@@ -339,11 +339,11 @@
      border-color: #fff;
      color: #fff;
  }
- 
+
  .arrow1{content: "\f106";}
  .arrow2{content: "\f106";}
- 
- 
+
+
  .stick {
 	position:fixed;
 	top:0px;
@@ -365,20 +365,20 @@ footer h2::before{content:"";position:absolute;background:#2275bb;width:20px;hei
 footer .elementor-widget-container:hover h2::before{width:100px}
 
 
- 
 
- 
- 
+
+
+
  h2.elementor-heading-title{
-   
-    
+
+
 }
 
- 
 
- 
 
- 
+
+
+
 
 
 h2.elementor-heading-title::before{content:"";position:absolute;background:#2275bb;height:65px;width:3px;border-radius:10px;left:-20px;top:10px;transition:all .5s ease-in-out}
@@ -474,8 +474,8 @@ line-height: 2; direction: ltr; margin-top: -4%; border-radius:5px;}
 
 .elementor-22 .elementor-element.elementor-element-644fc05 > .elementor-element-populated:hover .elementor-background-overlay{transition: all 0.3s ease-in-out 0s; background-color: rgba(0, 0, 0, 0.5); }
 
- 
- 
+
+
  .hover-img .imglay::before {
   background:rgba(0,0,0,0.6);
   position: absolute;
@@ -541,9 +541,9 @@ line-height: 2; direction: ltr; margin-top: -4%; border-radius:5px;}
     background:#000;
     padding: 30px 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; margin-bottom:15px;
-    
+
     transition: all 0.5s ease-in-out;
-        
+
     text-align: center;
     height: 230px; width:100%; color:#fff;
 }
@@ -676,7 +676,7 @@ line-height: 2; direction: ltr; margin-top: -4%; border-radius:5px;}
   border-right : 241px solid transparent;
   top  : -160px;
   left : -240px;
-  transition   : all .3s;			
+  transition   : all .3s;
 }
 
 .br5 {
@@ -684,7 +684,7 @@ line-height: 2; direction: ltr; margin-top: -4%; border-radius:5px;}
   border-left   : 241px solid transparent;
   bottom : -160px;
   right  : -240px;
-  transition   : all .3s;			
+  transition   : all .3s;
 }
 
 .items:hover .tl5 {
@@ -765,7 +765,7 @@ line-height: 2; direction: ltr; margin-top: -4%; border-radius:5px;}
 
 .animate-charcter
 {
-   
+
   background-image: linear-gradient(
     -225deg,
     #231557 0%,
@@ -802,7 +802,7 @@ line-height: 2; direction: ltr; margin-top: -4%; border-radius:5px;}
 
 svg {
   font-family: 'Russo One', sans-serif;
-  position: absolute; 
+  position: absolute;
   width: 100%; height: 100%;
 }
 svg text {
@@ -820,7 +820,7 @@ svg text {
   70%  {fill: rgba(72,138,20,0); stroke: rgba(62,136,250,1); }
   80%  {fill: rgba(72,138,20,0); stroke: rgba(62,136,250,1); stroke-width: 3; }
   100% {
-    fill: rgba(72,138,204,1); stroke: rgba(62,136,250,0); 
+    fill: rgba(72,138,204,1); stroke: rgba(62,136,250,0);
     stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
   }
 }
@@ -837,12 +837,12 @@ svg text {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align:center;  
+  text-align:center;
 }
 
 .heading-primary {
-     
-     
+
+
 }
 
 .heading-primary-main {
@@ -860,7 +860,7 @@ svg text {
      text-align:left;
     font-weight: 700;
     letter-spacing: 1.9px;
-  
+
     animation-name: moveInRight;
     animation-duration: 3s;
 }
@@ -889,7 +889,7 @@ svg text {
     80% {
         transform: translateX(-10px);
     }
-    
+
     100% {
         opacity: 1;
         transform: translate(0);
@@ -905,7 +905,7 @@ svg text {
 
 .typing h2 .typ:nth-child(1) {
   color: #355c7d;
-  
+
   margin: 0 0 0 0%;
   text-align: left;
   white-space: nowrap;
@@ -941,10 +941,10 @@ svg text {
 
 .typing h3 .typ:nth-child(2) {
   opacity: 0;
-   
+
   margin: 0 auto auto auto;
   background: linear-gradient(to right, #f8b195, #f67280, #c06c84);
-   
+
   width: 430px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
